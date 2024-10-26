@@ -83,5 +83,6 @@ class Game:
             'map': [[self.map[y][x] if (x, y) in self.revealed else (-2 if (x, y) in self.flags else -3) for x in range(self.map.size[1])] for y in range(self.map.size[0])],
             'win': self.win,
             'lose': self.lose,
-            'over': self.over
+            'over': self.over,
+            'flags': len(self.flags)
         }

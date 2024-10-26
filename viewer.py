@@ -3,6 +3,8 @@ import sys
 from minesweeper import Game
 from const import *
 
+ai_mode = False
+
 # Inicializa o Pygame
 pygame.init()
 
@@ -77,3 +79,6 @@ def loop(executor):
 
         pygame.display.update()
 
+        # Espera um tempo
+        if ai_mode:
+            pygame.time.wait(100)
