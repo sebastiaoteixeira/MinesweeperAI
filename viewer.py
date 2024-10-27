@@ -81,4 +81,4 @@ def loop(executor):
 
         # Espera um tempo
         if ai_mode:
-            pygame.time.wait(100)
+            pygame.time.wait(10)

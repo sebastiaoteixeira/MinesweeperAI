@@ -84,5 +84,8 @@ class Game:
             'win': self.win,
             'lose': self.lose,
             'over': self.over,
-            'flags': len(self.flags)
+            'flags': len(self.flags),
+            'mines': self.map.mines_count,
+            'revealed': len(self.revealed),
+            'area': self.map.area
         }
